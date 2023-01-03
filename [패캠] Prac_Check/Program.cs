@@ -1,36 +1,16 @@
-﻿/* Check : 표준 출력으로 여러 줄의 코드 작성하기 (다양한 입출력) */
-using System; // Console을 사용하기 위해 using 함
+﻿/* 메인 함수 파라미터를 받은 데이터를 사용하기 */
+using System;
 
-
-namespace _004_Check
+namespace _005_Check
 {
     internal class Program
-    { // ＠ internal : 클래스의 멤버 접근 권한 제어로, 이를 가진 멤버는 어셈블리 코드에서만 사용할 수 있음 
-
-        static void Main()
+    {
+        static void Main(string[] args)
         {
-            // 출력 1
-            Console.WriteLine("다양한 출력해보기");
-            
-            // 출력 2
-            Console.Write("{0} * {1} = {2}\n", 2, 10, 2*10);
-            
-            // 출력 3
-            for (int i = 1; i <= 3; i++)
-            {
-                // 앞 : 빈 칸
-                for(int j = 1; j + i <= 5; j++)
-                {
-                    Console.Write(" ");
-                }
-
-                // 뒤 : * 채우기
-                for(int j = 1; j <= (i * 2 - 1); j++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+            Console.WriteLine("지금 듣는 강의는 {0}", args[0]);
+            Console.WriteLine("{0} 좋아요!!", args[1]);
         }
+        // ★ (Windows 프로그래밍할 때와 달리) cmd를 통해 .exe 다음의 파라미터들은 0부터 시작!
+        // ★ C#은 %s 사용 불가능. 대신 자료형에 상관 없이 {#} 형태로 모두 출력 가능! 단, 인수의 인덱스에 맞춰야 함.
     }
 }
