@@ -9,7 +9,8 @@ namespace _032_Check
         {
             int a = 100;
             string b = "AAA";
-            Single c = 0.123f; // Single 구조체 - 4바이트 (단정밀도) 실수. 리터럴 접미사 'f' 붙여야 함
+            // Single c = 0.123f; -> Single 구조체 - 4바이트 (단정밀도) 실수. 리터럴 접미사 'f' 붙여야 함
+            float c = 0.123f; // System.Single은 float이라고 보면 됨
             char d = 'A';
 
 
