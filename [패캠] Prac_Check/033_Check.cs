@@ -31,6 +31,11 @@ namespace _033_Check
 
             Console.Write("국어 점수 입력하세요 : ");
             kor = Console.ReadLine();
+            
+            /* 다른 방법 : 각각의 변수 선언을 string 대신 int로 / Convert 함수 대신 Parse 함수로 
+            Console.Write("국어 점수 입력하세요 : ");
+            int kor = int.Parse(Console.ReadLine());
+            */
 
             Console.Write("영어 점수 입력하세요 : ");
             eng = Console.ReadLine();
