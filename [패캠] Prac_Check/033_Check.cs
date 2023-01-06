@@ -48,6 +48,9 @@ namespace _033_Check
 
             sum = Convert.ToInt32(kor) + Convert.ToInt32(eng) + Convert.ToInt32(mth) + Convert.ToInt32(sci);
             avg = sum / 4;
+            /* 다른 방법 : avg를 float으로 한 경우 -> f를 써야 함!
+            avg = sum / 4f;
+            */
 
             Console.WriteLine("국어 : {0}\t영어 : {1}\t수학 : {2}\t과학 : {3}", kor, eng, mth, sci);
             Console.WriteLine("총점 : {0}\t평균 : {1:0.0}", sum, avg);
