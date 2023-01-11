@@ -27,6 +27,7 @@ namespace _055_Check
                 Console.WriteLine("다음 두 수의 합은 몇?(총 5문제)");
                 Console.WriteLine("{0} + {1} = ??", num1, num2);
                 input = Convert.ToInt32(Console.ReadLine());
+               // int.Parse() 사용 가능
 
                 if (input == sum)
                 {
