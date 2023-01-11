@@ -7,7 +7,8 @@ namespace _057_Check
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            /* Solution #1 */
             int[] students = new int[5];
             // 배열 선언 방식이 C#과 C/C++은 다르다. []의 위치가..
 
@@ -38,6 +39,25 @@ namespace _057_Check
                 }
             }
             Console.WriteLine("최소값: " + students[minIndex]);
+            
+            
+            /* Solution 2 */
+            int maxNum = int.MinValue; // Int32의 최소값 -2147483648;
+            int minNum = int.MaxValue; // Int32의 최대값 2147483647;
+            
+            for(int i = 0; i < 5; i++)
+            {
+                Console.Write("학생의 성적을 입력하세요: ");
+                int inputNum = int.Parse(Console.ReadLine());
+                
+                if (maxNum < inputNum)
+                    maxNum = inputNum;
+                
+                if (minNum > inputNum)
+                    minNum = inputNum;
+            }
+            
+            // 콘솔창 출력 문장은 동일
         }
     }
 }
