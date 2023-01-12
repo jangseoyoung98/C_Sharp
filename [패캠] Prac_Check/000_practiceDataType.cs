@@ -28,6 +28,8 @@ namespace _000_practiceDataType
             Console.WriteLine("캐릭터 상태 : {0}  {1}", charState, (int)charState);
 
             // more examples..!
+            
+            // and more data type!
 
 
         }
